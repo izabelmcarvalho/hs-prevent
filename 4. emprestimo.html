@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/emprestimo-style.css">
+    <link rel="stylesheet" href="estilos/emprestimo-media-query.css">
+    <title>Empréstimo | Simulação</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/logotipo.svg" alt="Logotipo Banco dos Açores">
+        <a href="1. index.html" rel="prev"><button>SAIR</button></a>
+    </header>
+
+    <body>
+        <h1>3. EMPRÉSTIMO</h1>
+        <form action="#" method="post">
+            <div>
+                <label for="iempres">Valor do empréstimo:</label>
+                <input type="number" name="empres" id="iempres" placeholder="R$" required>
+            </div>
+            <div>
+                <label for="iprazo">Prazo para pagamento (meses):</label>
+                <input type="range" name="prazo" id="iprazo" min="6" max="36" value="12" oninput="ipag.innerHTML = Number(iprazo.value)"><output id="ipag">12</output>
+            </div>
+        </form>
+        <a href="7. documentacao.html" rel="next"><button>AVANÇAR</button></a>
+    </body>
+
+    <aside>
+        <div>
+            <h3>Ajuda</h3>
+            <ul>
+                <li>Central de ajuda</li>
+                <li>Segurança</li>
+                <li>Termos de uso</li>
+                <li>Privacidade</li>
+            </ul>
+        </div>
+        <div>
+            <h3 id="social">Redes sociais</h3>
+            <a href="#"><img id="facebook" src="imagens/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="imagens/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img id="twitter" src="imagens/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img id="linkedin" src="imagens/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </aside>
+
+    <footer>
+        <p>© 2023 Banco dos Açoures</p>
+    </footer>
+</body>
+</html>

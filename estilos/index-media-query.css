@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+    header {
+        width: 100%;
+        height: 80px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.250);
+    }
+
+    header > img {
+        width: 173.35px;
+        height: 52px;
+        margin: 0px 0px 0px 75px;
+    }
+
+    header > button {
+        width: 160px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 1em;
+        margin: 20px 75px 0px 0px;
+        cursor: pointer;
+    }
+
+    body > h1 {
+        font-size: 2.125em;
+        font-weight: 600;
+        margin: 20px 0px 15px 0px;
+    }
+
+    body > img {
+        width: 183.57px;
+    }
+
+    body > h2 {
+        font-size: 1.375em;
+        font-weight: 600;
+    }
+
+    body > p {
+        max-width: 580px;
+        font-size: 1.125em;
+        padding: 20px 0px 40px 0px; 
+        margin: auto;
+    }
+
+    body > a > button {
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 1.125em;
+        cursor: pointer;
+    }
+
+    aside {
+        height: 190px;
+        display: inline-flex;
+        justify-content: center;
+        box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.250);
+    }
+
+    aside > div > h3 {
+        font-size: 1em;
+        font-weight: 600;
+        padding-top: 20px;
+    }
+
+    aside > div > h3#social {
+        padding-top: 20px;
+    }
+
+    aside > div > ul {
+        max-width: 800px;
+        cursor: pointer;
+    }
+
+    aside > div > ul > li {
+        font-size: 0.875em;
+        padding: 0px 20px 10px 0px;
+    }
+
+    aside > div > a > img {
+        width: 20px;
+    }
+
+    aside > div > a > img#twitter {
+        margin-top: 4px;
+    }
+
+    aside > div > a > img#linkedin {
+        width: 22px;
+        margin-bottom: 4px;
+    }
+
+    footer {
+        height: 50px;
+        padding-top: 10px;
+        box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.250);
+    }
+}

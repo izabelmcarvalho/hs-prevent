@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/imobiliario-style.css">
+    <link rel="stylesheet" href="estilos/imobiliario-media-query.css">
+    <title>Financiamento Imobiliário | Simulação</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/logotipo.svg" alt="Logotipo Banco dos Açores">
+        <a href="1. index.html" rel="prev"><button>SAIR</button></a>
+    </header>
+
+    <body>
+        <h1>3. IMOBILIÁRIO</h1>
+        <form action="#" method="post">
+            <div>
+                <label for="iobjetivo">Objetivo do financiamento:</label><br>
+            </div>
+            <div class="radio">
+            <span>
+                <input type="radio" name="financ" id="iicarro" value="C" checked>
+                <label for="iempres"> Residencial</label><br>
+            </span>
+            <span>
+                <input type="radio" name="financ" id="iimoto" value="M">
+                <label for="iimob"> Comercial</label><br>
+            </span>
+            </div>
+            <div>
+                <label for="ilocalim">Localização do imóvel:</label><br>
+                <select name="localim" id="ilocalim">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div>
+                <label for="ivimovel">Valor do financiamento:</label>
+                <input type="number" name="vimovel" id="ivimovel" placeholder="R$" required>
+                <label for="iprazo">Prazo para pagamento (anos):</label>
+                <input type="range" name="prazo" id="iprazo" min="3" max="30" value="10" oninput="ipag.innerHTML = Number(iprazo.value)"><output id="ipag">10</output></div>
+            </div>
+        </form>
+        <a href="7. documentacao.html" rel="next"><button>AVANÇAR</button></a>
+    </body>
+
+    <aside>
+        <div>
+            <h3>Ajuda</h3>
+            <ul>
+                <li>Central de ajuda</li>
+                <li>Segurança</li>
+                <li>Termos de uso</li>
+                <li>Privacidade</li>
+            </ul>
+        </div>
+        <div>
+            <h3 id="social">Redes sociais</h3>
+            <a href="#"><img id="facebook" src="imagens/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="imagens/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img id="twitter" src="imagens/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img id="linkedin" src="imagens/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </aside>
+
+    <footer>
+        <p>© 2023 Banco dos Açoures</p>
+    </footer>
+</body>
+</html>

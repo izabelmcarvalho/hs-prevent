@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/dados-style.css">
+    <link rel="stylesheet" href="estilos/dados-media-query.css">
+    <title>Dados Iniciais | Financiamento</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/logotipo.svg" alt="Logotipo Banco dos Açores">
+        <a href="1. index.html" rel="prev"><button>SAIR</button></a>
+    </header>
+
+    <body>
+        <h1>1. DADOS INICIAIS</h1>
+        <form action="#" method="post" autocomplete="on">
+            <div>
+                <label for="inome">Nome:</label><br>
+                <input type="text" placeholder="Nome completo" name="nome" id="inome" maxlength="40" autocomplete="name" required><br>
+                <label for="icpf">CPF:</label><br>
+                <input type="text" placeholder="XXX.XXX.XXX-XX" name="cpf" id="icpf" maxlength="14" required><br>
+                <label for="inasc">Data de nascimento:</label><br>
+                <input type="date" name="nasc" id="inasc"  autocomplete="bday" required><br>
+            </div>
+            <div>
+                <label for="imae">Nome da mãe:</label><br>
+                <input type="text" placeholder="Nome completo" name="mae" id="imae" maxlength="40" autocomplete="name" required><br>
+                <label for="iemail">E-mail:</label><br>
+                <input type="email" placeholder="seuemail@provedor.com" name="email" id="iemail" maxlength="30" autocomplete="email" required><br>
+                <label for="icelular">Celular:</label><br>
+                <input type="tel" placeholder="(XX)XXXXX-XXXX" name="celular" id="icelular" maxlength="14" autocomplete="tel" required><br>
+            </div>
+        </form>
+        <a href="3. proposta.html" rel="next"><button>AVANÇAR</button></a>
+    </body>
+
+    <aside>
+        <div>
+            <h3>Ajuda</h3>
+            <ul>
+                <li>Central de ajuda</li>
+                <li>Segurança</li>
+                <li>Termos de uso</li>
+                <li>Privacidade</li>
+            </ul>
+        </div>
+        <div>
+            <h3 id="social">Redes sociais</h3>
+            <a href="#"><img id="facebook" src="imagens/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="imagens/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img id="twitter" src="imagens/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img id="linkedin" src="imagens/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </aside>
+
+    <footer>
+        <p>© 2023 Banco dos Açoures</p>
+    </footer>
+</body>
+</html>

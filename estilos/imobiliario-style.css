@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #3D3D3D;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #EDEDED;
+    display: block;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.250);
+}
+
+header > img {
+    width: 101px;
+    height: 33.67;
+    padding: 15px 0px 0px 25px;
+    float: left;
+}
+
+header > a {
+    float: right;
+    margin: 15px 25px 0px 0px;
+}
+
+header > a > button {
+    width: 75px;
+    height: 33px;
+    border: none;
+    border-radius: 4px;
+    background-color: #623A9A;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+body > h1 {
+    font-size: 1.125em;
+    text-align: left;
+    padding: 20px 0px 10px 25px;
+    color: #734AAC;
+    font-weight: 600;
+}
+
+body > form > div {
+    display: block;
+    text-align: left;
+    padding: 5px 0px 2.5px 0px;
+}
+
+body > form > div > label {
+    font-size: 0.875em;
+    font-weight: 500; 
+    margin-left: 25px; 
+}
+
+body > form > div > input {
+    margin: 5px 0px 5px 25px;
+    background-color: #EDEDED;
+    font-size: 0.75em;
+    text-align: left;
+    text-indent: 5px;
+    width: 310px;
+    height: 28px;
+    border-radius: 4px;
+}
+
+body > form > div > select {
+    margin: 5px 0px 15px 25px;
+    background-color: #EDEDED;
+    font-size: 0.75em;
+    text-align: left;
+    text-indent: 5px;
+    width: 310px;
+    height: 28px;
+    border-radius: 4px;
+}
+
+body > form > div.radio > span > label{
+    margin-bottom: 50px;
+}
+
+body > form > div.radio > span {
+    font-size: 0.875em;
+    margin-left: 25px; 
+}
+
+body > form > div.radio > span > input {
+    margin: 5px 0px;
+}
+
+body > a > button {
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    background-color: #623A9A;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+aside {
+    width: 100vw;
+    height: 170px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #EDEDED;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.250);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+aside > div {
+    display: block;
+}
+
+aside > div > h3 {
+    font-size: 0.75em;
+    text-align: left;
+    margin: 0px 0px 10px 10px;
+    padding-top: 20px;
+}
+
+aside > div > h3#social {
+    padding-left: 14px;
+}
+
+aside > div > ul {
+    max-width: 250px;
+    margin-left: 10px;
+    columns: 2;
+}
+
+aside > div > ul > li {
+    font-size: 0.675em;
+    padding-bottom: 5px;
+    list-style: none;
+    text-align: left;
+}
+
+aside > div > a > img {
+    width: 16px;
+    float: left;
+    padding: 5px;
+}
+
+aside > div > a > img#facebook {
+    margin-left: 20px;
+}
+
+aside > div > a > img#twitter {
+    margin-top: 2px;
+}
+
+aside > div > a > img#linkedin {
+    width: 17px;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #623A9A;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.250);
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+footer > p {
+    padding-top: 11px;
+    text-align: center;
+    color: white;
+    font-size: 0.75em;
+}

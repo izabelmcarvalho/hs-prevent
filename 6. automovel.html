@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/automotivo-style.css">
+    <link rel="stylesheet" href="estilos/automotivo-media-query.css">
+    <title>Financiamento Automotivo | Simulação</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/logotipo.svg" alt="Logotipo Banco dos Açores">
+        <a href="1. index.html" rel="prev"><button>SAIR</button></a>
+    </header>
+
+    <body>
+        <h1>3. AUTOMÓVEL</h1>
+        <form action="#" method="post">
+            <div>
+                <label for="iobjetivo">Objetivo do financiamento:</label><br>
+            </div>
+            <div class="radio">
+                <span>
+                <input type="radio" name="financ" id="iicarro" value="C" checked onclick="updateSelectOptions()">
+                <label for="iempres"> Carro</label><br>
+                </span>
+                <span>
+                <input type="radio" name="financ" id="iimoto" value="M" onclick="updateSelectOptions()">
+                <label for="iimob"> Moto</label><br>
+                </span>
+            </div>
+            <div>
+                <label for="imarca">Marca do veículo:</label>
+                <select name="marca" id="imarca">
+                </select>
+            </div>
+            <div>
+                <label for="ifinanciar">Valor a financiar:</label>
+                <input type="number" name="financiar" id="ifinanciar" placeholder="R$" required>
+            </div>
+            <div>
+                <label for="iprazo">Prazo para pagamento (meses):</label>
+                <input type="range" name="prazo" id="iprazo" min="6" max="48" value="24" oninput="ipag.innerHTML = Number(iprazo.value)">
+                <output id="ipag">24</output>
+            </div>
+        </form>
+        <a href="7. documentacao.html" rel="next"><button>AVANÇAR</button></a>
+    </body>
+
+    <aside>
+        <div>
+            <h3>Ajuda</h3>
+            <ul>
+                <li>Central de ajuda</li>
+                <li>Segurança</li>
+                <li>Termos de uso</li>
+                <li>Privacidade</li>
+            </ul>
+        </div>
+        <div>
+            <h3 id="social">Redes sociais</h3>
+            <a href="#"><img id="facebook" src="imagens/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="imagens/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img id="twitter" src="imagens/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img id="linkedin" src="imagens/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </aside>
+
+    <footer>
+        <p>© 2023 Banco dos Açoures</p>
+    </footer>
+
+    <script>
+        function updateSelectOptions() {
+            const selectElement = document.getElementById("imarca");
+            const carroRadio = document.getElementById("iicarro");
+            const motoRadio = document.getElementById("iimoto");
+        
+            while (selectElement.firstChild) {
+              selectElement.removeChild(selectElement.firstChild);
+            }
+        
+            if (carroRadio.checked) {
+              addOptionToSelect(selectElement, "BMW", "bmw");
+              addOptionToSelect(selectElement, "Chevrolet", "che");
+              addOptionToSelect(selectElement, "Ferrari", "fer");
+              addOptionToSelect(selectElement, "Fiat", "fia");
+              addOptionToSelect(selectElement, "Ford", "for");
+              addOptionToSelect(selectElement, "General Motors", "gm");
+              addOptionToSelect(selectElement, "Honda", "hon");
+              addOptionToSelect(selectElement, "Hyundai", "hyu");
+              addOptionToSelect(selectElement, "Mercedes-Benz", "mb");
+              addOptionToSelect(selectElement, "Nissan", "nis");
+              addOptionToSelect(selectElement, "Toyota", "toy");
+              addOptionToSelect(selectElement, "Volkswagen", "vkw");
+            } else if (motoRadio.checked) {
+              addOptionToSelect(selectElement, "Harley-Davidson", "har");
+              addOptionToSelect(selectElement, "Honda", "hon");
+              addOptionToSelect(selectElement, "Kawasaki", "kaw");
+              addOptionToSelect(selectElement, "Suzuki", "suz");
+              addOptionToSelect(selectElement, "Yamaha", "yam");
+            }
+          }
+        
+          function addOptionToSelect(selectElement, optionText, optionValue) {
+            const option = document.createElement("option");
+            option.text = optionText;
+            option.value = optionValue;
+            selectElement.add(option);
+          }
+
+          updateSelectOptions();
+    </script>
+</body>
+</html>
